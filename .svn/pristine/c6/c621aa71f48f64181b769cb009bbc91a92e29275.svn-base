@@ -1,0 +1,10 @@
+package com.example.mhaq.ocrdemo;
+
+/**
+ * Created by mhaq on 4/11/17.
+ */
+
+public class Constants {
+    public static final String READING = "Reading...";
+    public static final String DETECTED_MESG = "Text detected in this image: \n\n";
+}

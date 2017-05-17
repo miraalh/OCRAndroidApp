@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.mhaq.ocrdemo.MainActivity">
+
+    <android.widget.RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width = "match_parent"
+        android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Image To Speech"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+
+            <CheckedTextView
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:maxLines="5"
+                android:checkMark="@drawable/checked"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text = "Convert photos to text"/>
+
+            <CheckedTextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/convert"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:maxLines="5"
+                android:checkMark="@drawable/checked"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text = "Save documents"/>
+
+            <CheckedTextView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="true"
+                android:layout_below="@id/save"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:maxLines="5"
+                android:checkMark="@drawable/checked"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text = "Share with friends"/>
+
+        <LinearLayout
+            android:id="@+id/photoButtonLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/takePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/camera"
+                android:text="Take a Photo"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/choosePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/gallery"
+                android:textSize="20sp"
+                android:text="Choose a Photo"
+                android:layout_toRightOf="@id/takePhotoButton"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </android.widget.RelativeLayout>
+
+</ScrollView>
